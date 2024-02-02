@@ -1,0 +1,6 @@
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\bin\Debug\Capa.Entidades.dll
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\bin\Debug\Capa.Entidades.pdb
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.csproj.AssemblyReference.cache
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.csproj.CoreCompileInputs.cache
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.dll
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.pdb

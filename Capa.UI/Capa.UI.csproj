@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D42E267F-CBE1-4D07-BC7F-6CF9F9083D60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Capa.UI</RootNamespace>
+    <AssemblyName>NoahsGYM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Noahs.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso\FrmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceso\FrmAcceso.Designer.cs">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso\FrmInfoGYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceso\FrmInfoGYM.Designer.cs">
+      <DependentUpon>FrmInfoGYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmAdministradorRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmAdministradorRegistro.Designer.cs">
+      <DependentUpon>FrmAdministradorRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmAgregarMembresias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmAgregarMembresias.Designer.cs">
+      <DependentUpon>FrmAgregarMembresias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmRegistroInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInstructor\FrmRegistroInstructor.Designer.cs">
+      <DependentUpon>FrmRegistroInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\FrmAreaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\FrmAreaAdministrador.Designer.cs">
+      <DependentUpon>FrmAreaAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmCorreoTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmCorreoTo.Designer.cs">
+      <DependentUpon>FrmCorreoTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmDatosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmDatosClientes.Designer.cs">
+      <DependentUpon>FrmDatosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmMedidas.Designer.cs">
+      <DependentUpon>FrmMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\FrmAreaInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\FrmAreaInstructor.Designer.cs">
+      <DependentUpon>FrmAreaInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\FrmAreaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\FrmAreaCliente.Designer.cs">
+      <DependentUpon>FrmAreaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmMembresias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmMembresias.Designer.cs">
+      <DependentUpon>FrmMembresias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FrmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FrmPago.Designer.cs">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Agente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PictureBoxCircular.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSAgrupacionXTipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAgrupacionXTipo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSClienteRutina.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSClienteRutina.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSFacturaAdminIns.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFacturaAdminIns.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSFacturaCliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFacturaCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSFacturaFiltro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFacturaFiltro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSMedidas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMedidas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSMorosos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMorosos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPopularesEjer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPopularesEjer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRutinaClienteXIDC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRutinaClienteXIDC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRutinaParaCliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRutinaParaCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmAgrupacionXTipoEjer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmAgrupacionXTipoEjer.Designer.cs">
+      <DependentUpon>FrmAgrupacionXTipoEjer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\FrmPopulares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmPopulares.Designer.cs">
+      <DependentUpon>FrmPopulares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturaAdminIns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturaAdminIns.Designer.cs">
+      <DependentUpon>FrmRepFacturaAdminIns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturaCliente.Designer.cs">
+      <DependentUpon>FrmRepFacturaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturasFiltro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFacturasFiltro.Designer.cs">
+      <DependentUpon>FrmRepFacturasFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepMedidasC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepMedidasC.Designer.cs">
+      <DependentUpon>FrmRepMedidasC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepMorosos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepMorosos.Designer.cs">
+      <DependentUpon>FrmRepMorosos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepRutinaParaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepRutinaParaCliente.Designer.cs">
+      <DependentUpon>FrmRepRutinaParaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRutinaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRutinaCliente.Designer.cs">
+      <DependentUpon>FrmRutinaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRutinaClienteXIDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRutinaClienteXIDC.Designer.cs">
+      <DependentUpon>FrmRutinaClienteXIDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rutinas\FrmAsignarRutina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutinas\FrmAsignarRutina.Designer.cs">
+      <DependentUpon>FrmAsignarRutina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rutinas\FrmEjercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutinas\FrmEjercicios.Designer.cs">
+      <DependentUpon>FrmEjercicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rutinas\FrmRutinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutinas\FrmRutinas.Designer.cs">
+      <DependentUpon>FrmRutinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Acceso\FrmAcceso.resx">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acceso\FrmInfoGYM.resx">
+      <DependentUpon>FrmInfoGYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInstructor\FrmAdministradorRegistro.resx">
+      <DependentUpon>FrmAdministradorRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInstructor\FrmAgregarMembresias.resx">
+      <DependentUpon>FrmAgregarMembresias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInstructor\FrmRegistroInstructor.resx">
+      <DependentUpon>FrmRegistroInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\FrmAreaAdministrador.resx">
+      <DependentUpon>FrmAreaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\FrmAreaCliente.resx">
+      <DependentUpon>FrmAreaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\FrmAreaInstructor.resx">
+      <DependentUpon>FrmAreaInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FrmCorreoTo.resx">
+      <DependentUpon>FrmCorreoTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FrmDatosClientes.resx">
+      <DependentUpon>FrmDatosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FrmMembresias.resx">
+      <DependentUpon>FrmMembresias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FrmPago.resx">
+      <DependentUpon>FrmPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Clientes\FrmMedidas.resx">
+      <DependentUpon>FrmMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepAgrupacionXTipoEjer.rdlc" />
+    <EmbeddedResource Include="RepClienteRutina.rdlc" />
+    <EmbeddedResource Include="RepFacturaAdminIns.rdlc" />
+    <EmbeddedResource Include="RepFacturaCliente.rdlc" />
+    <EmbeddedResource Include="RepFacturasFiltro.rdlc" />
+    <EmbeddedResource Include="RepMedidasC.rdlc" />
+    <EmbeddedResource Include="RepMorosos.rdlc" />
+    <EmbeddedResource Include="Reportes\FrmAgrupacionXTipoEjer.resx">
+      <DependentUpon>FrmAgrupacionXTipoEjer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmPopulares.resx">
+      <DependentUpon>FrmPopulares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepFacturaAdminIns.resx">
+      <DependentUpon>FrmRepFacturaAdminIns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepFacturaCliente.resx">
+      <DependentUpon>FrmRepFacturaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepFacturasFiltro.resx">
+      <DependentUpon>FrmRepFacturasFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepMedidasC.resx">
+      <DependentUpon>FrmRepMedidasC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepMorosos.resx">
+      <DependentUpon>FrmRepMorosos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepRutinaParaCliente.resx">
+      <DependentUpon>FrmRepRutinaParaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRutinaCliente.resx">
+      <DependentUpon>FrmRutinaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRutinaClienteXIDC.resx">
+      <DependentUpon>FrmRutinaClienteXIDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepPopularesEjer.rdlc" />
+    <EmbeddedResource Include="RepRutinaClienteXIDC.rdlc" />
+    <EmbeddedResource Include="RepRutinaParaCliente.rdlc" />
+    <EmbeddedResource Include="Rutinas\FrmAsignarRutina.resx">
+      <DependentUpon>FrmAsignarRutina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rutinas\FrmEjercicios.resx">
+      <DependentUpon>FrmEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rutinas\FrmRutinas.resx">
+      <DependentUpon>FrmRutinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\Agente\wsindicadoreseconomicos.wsdl" />
+    <None Include="DSAgrupacionXTipo.xsc">
+      <DependentUpon>DSAgrupacionXTipo.xsd</DependentUpon>
+    </None>
+    <None Include="DSAgrupacionXTipo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAgrupacionXTipo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSAgrupacionXTipo.xss">
+      <DependentUpon>DSAgrupacionXTipo.xsd</DependentUpon>
+    </None>
+    <None Include="DSClienteRutina.xsc">
+      <DependentUpon>DSClienteRutina.xsd</DependentUpon>
+    </None>
+    <None Include="DSClienteRutina.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSClienteRutina.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSClienteRutina.xss">
+      <DependentUpon>DSClienteRutina.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaAdminIns.xsc">
+      <DependentUpon>DSFacturaAdminIns.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaAdminIns.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFacturaAdminIns.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSFacturaAdminIns.xss">
+      <DependentUpon>DSFacturaAdminIns.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaCliente.xsc">
+      <DependentUpon>DSFacturaCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaCliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFacturaCliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSFacturaCliente.xss">
+      <DependentUpon>DSFacturaCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaFiltro.xsc">
+      <DependentUpon>DSFacturaFiltro.xsd</DependentUpon>
+    </None>
+    <None Include="DSFacturaFiltro.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFacturaFiltro.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSFacturaFiltro.xss">
+      <DependentUpon>DSFacturaFiltro.xsd</DependentUpon>
+    </None>
+    <None Include="DSMedidas.xsc">
+      <DependentUpon>DSMedidas.xsd</DependentUpon>
+    </None>
+    <None Include="DSMedidas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMedidas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSMedidas.xss">
+      <DependentUpon>DSMedidas.xsd</DependentUpon>
+    </None>
+    <None Include="DSMorosos.xsc">
+      <DependentUpon>DSMorosos.xsd</DependentUpon>
+    </None>
+    <None Include="DSMorosos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMorosos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSMorosos.xss">
+      <DependentUpon>DSMorosos.xsd</DependentUpon>
+    </None>
+    <None Include="DsPopularesEjer.xsc">
+      <DependentUpon>DsPopularesEjer.xsd</DependentUpon>
+    </None>
+    <None Include="DsPopularesEjer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPopularesEjer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsPopularesEjer.xss">
+      <DependentUpon>DsPopularesEjer.xsd</DependentUpon>
+    </None>
+    <None Include="DSRutinaClienteXIDC.xsc">
+      <DependentUpon>DSRutinaClienteXIDC.xsd</DependentUpon>
+    </None>
+    <None Include="DSRutinaClienteXIDC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRutinaClienteXIDC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSRutinaClienteXIDC.xss">
+      <DependentUpon>DSRutinaClienteXIDC.xsd</DependentUpon>
+    </None>
+    <None Include="DSRutinaParaCliente.xsc">
+      <DependentUpon>DSRutinaParaCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DSRutinaParaCliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRutinaParaCliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSRutinaParaCliente.xss">
+      <DependentUpon>DSRutinaParaCliente.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa.BLL\Capa.BLL.csproj">
+      <Project>{a0d3db04-9e1d-4eff-a1d0-a251c2fd77a8}</Project>
+      <Name>Capa.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa.Entidades\Capa.Entidades.csproj">
+      <Project>{6bcd1dfd-8e8b-41aa-9808-e975439a8fcd}</Project>
+      <Name>Capa.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EjerciciosICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoOficial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMiembros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Agente\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Agente\wsindicadoreseconomicos.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Agente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Agente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Agente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Noahs.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

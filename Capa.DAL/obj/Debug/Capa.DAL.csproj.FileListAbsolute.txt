@@ -1,0 +1,9 @@
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\bin\Debug\Capa.DAL.dll
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\bin\Debug\Capa.DAL.pdb
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\bin\Debug\Capa.Entidades.dll
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\bin\Debug\Capa.Entidades.pdb
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\obj\Debug\Capa.DAL.csproj.AssemblyReference.cache
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\obj\Debug\Capa.DAL.csproj.CoreCompileInputs.cache
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\obj\Debug\Capa.DAL.csproj.CopyComplete
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\obj\Debug\Capa.DAL.dll
+E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.DAL\obj\Debug\Capa.DAL.pdb
