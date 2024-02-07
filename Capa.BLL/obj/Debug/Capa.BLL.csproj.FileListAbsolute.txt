@@ -9,3 +9,14 @@ E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.BLL\obj\Debug\Capa.BLL.csproj.CopyComplete
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.BLL\obj\Debug\Capa.BLL.dll
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.BLL\obj\Debug\Capa.BLL.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.BLL.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.BLL.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.DAL.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.Entidades.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.DAL.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\bin\Debug\Capa.Entidades.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\obj\Debug\Capa.BLL.csproj.AssemblyReference.cache
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\obj\Debug\Capa.BLL.csproj.CoreCompileInputs.cache
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\obj\Debug\Capa.BLL.csproj.CopyComplete
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\obj\Debug\Capa.BLL.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.BLL\obj\Debug\Capa.BLL.pdb

@@ -4,3 +4,9 @@ E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.csproj.CoreCompileInputs.cache
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.dll
 E:\II Cuatrimestre, 2022\Programación 3\Proyecto\Codigo Fuente\slnNoahsGYM\Capa.Entidades\obj\Debug\Capa.Entidades.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\bin\Debug\Capa.Entidades.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\bin\Debug\Capa.Entidades.pdb
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\obj\Debug\Capa.Entidades.csproj.AssemblyReference.cache
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\obj\Debug\Capa.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\obj\Debug\Capa.Entidades.dll
+C:\Users\TYLINN\Source\Repos\tngonzalez\Noahs-GYM\Capa.Entidades\obj\Debug\Capa.Entidades.pdb
