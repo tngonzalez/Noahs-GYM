@@ -1,4 +1,28 @@
-<h1 align="center"> Gimnasio Noah </h1>
+<p align="center">
+  <img src="https://github.com/tngonzalez/Noahs-GYM/assets/113228469/83ee19a6-01f9-4f4d-a026-703dd9becbcc" width="150" height="150" />  
+</p>
 
-<h4>Noah's GYM es un avanzado sistema de gesti髇 dise馻do y desarrollado en C# para ofrecer una experiencia 髉tima en el seguimiento de rutinas, avances de pesos y gesti髇 de usuarios en el entorno de un gimnasio moderno. Este sistema intuitivo y eficiente permite a los usuarios, entrenadores y administradores optimizar su tiempo y maximizar los resultados de entrenamiento.</h4>
+<h1 align="center"> Noah's GYM</h1>
+
+<p align="justify">Noah's GYM es un sistema de gesti贸n dise帽ado y desarrollado en C# para ofrecer una experiencia 贸ptima en el seguimiento de rutinas, avances de pesos y gesti贸n de usuarios en el entorno de un gimnasio moderno. Este sistema intuitivo y eficiente permite a los usuarios, entrenadores y administradores optimizar su tiempo y maximizar los resultados de entrenamiento.</p>
+
+<h2>Caracter铆sticas</h2>
+<ul>
+  <li>Inicio sesi贸n</li>
+   <ul>
+          <li>El usuario debe ingresar con su n煤mero de identificaci贸n y contrase帽a antes de poder acceder a las funciones de sistema. </li>
+          <li>Una vez que inicien sesi贸n, est谩n listos para usar la aplicaci贸n. </li>
+  </ul>
+  <li>Pantalla de inicio</li>
+    <ul>
+      <li>La pantalla principal posee una <i> barra de navegaci贸n lateral </i> que permite visualizar el nombre completo de usuario, su identificaci贸n, adem谩s de su foto de perfil.</li>
+       <li>La barra de navegaci贸n tiene hipervinculos dependiendo del tipo de usuario que inici贸 secci贸n: </li>
+      
+      <li>Milk</li>
+   </ul>
+</ul>
+
+
+
+
 
