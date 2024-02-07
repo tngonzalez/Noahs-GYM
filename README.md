@@ -18,7 +18,7 @@
       <li>La pantalla principal posee una <i> barra de navegación lateral </i> que permite visualizar el nombre completo de usuario, su identificación, además de su foto de perfil.</li>
        <li>La barra de navegación tiene hipervinculos dependiendo del tipo de usuario que inició sección: </li>
       
-      <li>Milk</li>
+     
    </ul>
 </ul>
 
