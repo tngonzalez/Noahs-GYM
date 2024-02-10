@@ -4,7 +4,7 @@
 
 <h1 align="center"> Noah's GYM</h1>
 
-<p align="justify">Noah's GYM es un sistema de gestión diseñado y desarrollado en C# para ofrecer una experiencia óptima en el seguimiento de rutinas, avances de pesos y gestión de usuarios en el entorno de un gimnasio moderno. Este sistema intuitivo y eficiente permite a los usuarios, entrenadores y administradores optimizar su tiempo y maximizar los resultados de entrenamiento.</p>
+<p align="justify">Noah's GYM es un sistema de gestión diseñado y desarrollado en C# para ofrecer una experiencia óptima en el seguimiento de rutinas, avances de pesos y gestión de usuarios en el entorno de un gimnasio moderno. Este sistema intuitivo y eficiente permite a los usuarios, entrenadores y administradores optimizar su tiempo y maximizar los resultados de entrenamiento. </p>
 
 <h2>Características</h2>
 <ul>
